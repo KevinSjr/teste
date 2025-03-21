@@ -1,0 +1,277 @@
+/* estilo navbar*/
+.nav.container-fluid{
+    background-image: url(header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 63.82vw;
+}
+.logo{
+    height: 21.962vw;
+    width: 21.962vw;
+    position: relative;
+    bottom: 8.419vw;
+    left: 3.66vw;
+}
+.navbutton1{
+    color: #FFFFFF;
+    position: relative;
+    left: 25vw;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px,2vw,20px);
+}
+.navbutton2{
+    color: #FFFFFF;
+    position: relative;
+    left: 20vw;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px,2vw,20px);
+}
+.navbutton3{
+    color: #FFFFFF;
+    position: relative;
+    left: 27vw;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px,2vw,20px);
+}
+
+
+/*seção 1*/
+
+.img1{
+   width: clamp(160px,33.819vw,1630px);
+   height: clamp(115px,22.569vw,2000px);
+   border-radius: 6%;
+   position: relative;
+   top: 150px;
+}
+
+.title1{
+    font-family: Roboto;
+    font-size: clamp(12px,3vw,200px);
+    color: #000000;
+    font-weight: bolder;
+    position: relative;
+    top: 130px;
+}
+.title2{
+    font-family: Roboto;
+    font-size: clamp(12px,3vw,200px);
+    color: #000000;
+    position: relative;
+    font-weight: bolder;
+    top: 30vw;
+   
+}
+.text1{
+    font-family: Roboto;
+    font-size: clamp(10px,1.7vw,200px);
+    color: #000000;
+    position: relative;
+  top: 120px;
+}
+.wpplogo{
+    position: fixed;
+    z-index: 2;
+    left: 90.7%;
+  top: 80%; 
+    width: 6.25vw;
+    height: 6.25vw;
+}
+
+
+
+
+/*cards*/
+.card.mb-3:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+.card.mb-3{
+    background: linear-gradient(135deg, #ffcccc, #ff9999);
+    border: 3px solid #ffcccc;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+position: relative;
+top: 36.603vw;
+left: 23%;
+height: min-content;
+overflow: hidden;
+flex-grow: 0;
+align-items: center;
+width: min-content;
+padding: 10px;
+}
+.card-title{
+    color: rgb(215, 5,5);
+    font-size: clamp(16px,2.5vw,1600px);
+    border-bottom: 0.357vw solid #d80000;
+}
+.cardimg{
+    width: 13.889vw;
+    height: 13.889vw;
+  
+}
+.card-text{
+font-size: clamp(10px,1.528vw,700px);
+color: #333;
+word-break: keep-all;
+width: 25vw;
+
+}
+.card-text-g{
+    font-size: clamp(10px,1.528vw,700px);
+    position: relative;
+    left: 12vw;
+    bottom: clamp(85px,16.7vw,700px);
+    word-break: keep-all;
+    width: 52vw;
+   
+    }
+.card.mb-3-2{
+    background-color: rgb(215,5,5, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+position: relative;
+top: 36.603vw;
+width: 43.194vw;
+left: 7%;
+height: min-content;
+overflow: hidden;
+flex-grow: 0;
+align-items: center;
+width: min-content;
+}
+
+.card.mb-3-g{
+    background-color: rgb(215,5,5, 0.2);
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    top: 36.603vw;
+    left: 3.4%;
+    width: 85%;
+height: min-content;
+overflow: hidden;
+flex-grow: 0;
+}
+
+
+.card-body-special {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-img-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px; /
+}
+
+
+
+.cardimg-1,.cardimg-2 {
+    width: 13.889vw;
+    height: 13.889vw;
+}
+
+
+/*footer*/
+.container-fluid.footer{
+    background-image: url(Background.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 50vw;
+    height: 100vw;
+     z-index: 1;
+}
+
+
+.container-fluid.map{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 49vw;
+
+}
+iframe{
+    border: 0;
+    width: 100vw;
+  
+}
+.container-fluid.ff{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 49vw;
+}
+.card{
+    width: 30vw;
+    height: 25vw;
+    z-index: 1;
+position: relative;
+top: 30px;
+}
+
+/*contato*/
+
+.imgc{
+    width: 10vw;
+    height: 4.5vw;
+    position: relative;
+    left: 10vw;
+    top: 2.1vw;
+}
+.card-text-2,.card-text-3,.card-text-4{
+     font-size: clamp(10px,1.7vw,200px);
+    }
+.ctitulo1 ,.ctitulo2, .ctitulo3{
+    color: rgb(215, 5,5);
+    font-size: 2.5vw; 
+
+}
+
+
+.forms{
+    background-color:  rgb(215, 5,5);
+    position: relative;
+    bottom: 4.5vw;
+    left: 18vw;
+    height: 60vw;
+    border-radius: 2%;
+}
+.ftitulo{
+    font-size: 2.5vw;
+    position: relative;
+   
+   
+    color: #000000;    
+}
+.formulario{
+    position: relative; 
+    font-size: clamp(7.9px,1.528vw,700px);
+}
+
+
+.ftlogo{
+    position: relative;
+    width: 16.6vw;
+    height: 13.6vw;
+}
+
+.direitos{
+    font-size: clamp(10px,2vw,20px);
+
+}
+
