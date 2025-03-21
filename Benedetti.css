@@ -244,7 +244,7 @@ top: 30px;
 
 
 .forms{
-    background-color:  rgb(215, 5,5);
+    background: linear-gradient(85deg,#1a1a1a,#333);
     position: relative;
     bottom: 4.5vw;
     left: 18vw;
@@ -275,3 +275,39 @@ top: 30px;
 
 }
 
+.forms {
+    background: linear-gradient(to bottom, #1a1a1a, #333); /* Fundo escuro para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+ input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+button {
+    background: #d80000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ button:hover {
+    background: #ff0000;
+}
+
+h2 {
+   color: white!important;
+    border-bottom: 3px solid #d80000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
