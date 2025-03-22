@@ -119,7 +119,7 @@ padding: 10px;
 .card-title{
     color: rgb(215, 5,5);
     font-size: clamp(16px,2.5vw,1600px);
-  text-decoration: underline  0.357vw solid #d80000;
+  text-decoration: underline  0.157vw solid #d80000;
 }
 .cardimg{
     width: 13.889vw;
@@ -328,7 +328,7 @@ button {
 h2 {
     font-size: clamp(16px,2.5vw,1600px)!important;
    color: white!important;
-    border-bottom: 2px solid #d80000;
+    border-bottom: 0.157vw solid #d80000;
     display: inline-block;
    
 }
