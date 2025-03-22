@@ -85,8 +85,16 @@
 
 
 
-/*cards*/
+/*cards serviços*/
 .card.mb-3:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+.card.mb-3-2:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+.card.mb-3-g:hover {
     transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
 }
@@ -111,7 +119,7 @@ padding: 10px;
 .card-title{
     color: rgb(215, 5,5);
     font-size: clamp(16px,2.5vw,1600px);
-    border-bottom: 0.357vw solid #d80000;
+  text-decoration: underline  0.357vw solid #d80000;
 }
 .cardimg{
     width: 13.889vw;
@@ -135,7 +143,10 @@ width: 25vw;
    
     }
 .card.mb-3-2{
-    background-color: rgb(215,5,5, 0.2);
+    background: linear-gradient(135deg, #ffcccc, #ff9999);
+    border: 3px solid #ffcccc;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -151,7 +162,10 @@ width: min-content;
 }
 
 .card.mb-3-g{
-    background-color: rgb(215,5,5, 0.2);
+    background: linear-gradient(135deg, #ffcccc, #ff9999);
+    border: 3px solid #ffcccc;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
     display: flex;
     align-items: stretch;
@@ -182,6 +196,35 @@ flex-grow: 0;
     height: 13.889vw;
 }
 
+
+
+
+
+/*contato*/
+.card{
+    width: 30vw;
+    height: 25vw;
+    z-index: 1;
+position: relative;
+top: 30px;
+
+}
+.imgc{
+    width: 10vw;
+    height: 4.5vw;
+    position: relative;
+    left: 10vw;
+    top: 2.1vw;
+}
+.card-text-2,.card-text-3,.card-text-4{
+     font-size: clamp(10px,1.7vw,200px);
+     
+    }
+.ctitulo1 ,.ctitulo2, .ctitulo3{
+    color: rgb(215, 5,5);
+    font-size: 2.5vw; 
+
+}
 
 /*footer*/
 .container-fluid.footer{
@@ -216,53 +259,6 @@ iframe{
     position: relative;
     top: 49vw;
 }
-.card{
-    width: 30vw;
-    height: 25vw;
-    z-index: 1;
-position: relative;
-top: 30px;
-}
-
-/*contato*/
-
-.imgc{
-    width: 10vw;
-    height: 4.5vw;
-    position: relative;
-    left: 10vw;
-    top: 2.1vw;
-}
-.card-text-2,.card-text-3,.card-text-4{
-     font-size: clamp(10px,1.7vw,200px);
-    }
-.ctitulo1 ,.ctitulo2, .ctitulo3{
-    color: rgb(215, 5,5);
-    font-size: 2.5vw; 
-
-}
-
-
-.forms{
-    background: linear-gradient(85deg,#1a1a1a,#333);
-    position: relative;
-    bottom: 4.5vw;
-    left: 18vw;
-    height: 60vw;
-    border-radius: 2%;
-}
-.ftitulo{
-    font-size: 2.5vw;
-    position: relative;
-   
-   
-    color: #000000;    
-}
-.formulario{
-    position: relative; 
-    font-size: clamp(7.9px,1.528vw,700px);
-}
-
 
 .ftlogo{
     position: relative;
@@ -275,27 +271,51 @@ top: 30px;
 
 }
 
-.forms {
-    background: linear-gradient(to bottom, #1a1a1a, #333); /* Fundo escuro para contraste */
-    padding: 20px;
-    border-radius: 10px;
+
+/*formulario*/
+
+.forms{
+    position: relative;
+    bottom: 4.5vw;
+    left: 18vw;
+    height: 60vw;
+    border-radius: 2%;
+    background: linear-gradient(to bottom, #181717, #6e6969);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
+input{
+height:  clamp(20px,2.9411764705882355vw,2000px);
+
+}
+textarea{
+    height: 14.705882352941176vw;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  0.7352941176470589vw;
+}
  input, textarea {
-    width: 100%;
-    padding: 10px;
+    width: 40vw;
     border: 2px solid white;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.9);
-    margin-bottom: 10px;
+   
 }
 
 button {
+    font-size: clamp(10px,1.1029411764705883vw,100px)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.352941176470588vw;
+    height:  3.676470588235294vw;
     background: #d80000;
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 6%!important;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -306,8 +326,9 @@ button {
 }
 
 h2 {
+    font-size: clamp(16px,2.5vw,1600px)!important;
    color: white!important;
-    border-bottom: 3px solid #d80000;
+    border-bottom: 2px solid #d80000;
     display: inline-block;
-    padding-bottom: 5px;
+   
 }
