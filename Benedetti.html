@@ -48,6 +48,8 @@
 
     
 @media (min-width: 0px) and (max-width: 480px) {
+  .card-text{margin: 0;}
+  .card-title{margin: 0;}
   .card{
     left: -10px;
     top: 5px;
@@ -107,6 +109,9 @@
 @media (min-width: 225px) and (max-width: 424px) {
   .card.mb-3-g{height: 450px;}
 
+   .imgc{
+    bottom: 20px;
+  }
   .cardimg-2{
     position: relative;
   top: 150px;
@@ -178,10 +183,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 250px!important;
+    height: 350px!important;
   }
   .card.mb-3-2{
-    height: 250px!important;
+    height: 350px!important;
   }
   .card.mb-3-g{
     width: 100%;
@@ -202,10 +207,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 300px!important;
+    height: 400px!important;
   }
   .card.mb-3-2{
-    height: 300px!important;
+    height: 400px!important;
   }
   .card.mb-3-g{
     width: 79%;
@@ -223,10 +228,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 350px!important;
+    height: 450px!important;
   }
   .card.mb-3-2{
-    height: 350px!important;
+    height: 450px!important;
   }
   .card.mb-3-g{
     width: 92%;
@@ -243,10 +248,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 420px!important;
+    height: 500px!important;
   }
   .card.mb-3-2{
-    height: 420px!important;
+    height: 500px!important;
   }
   .card.mb-3-g{
     width: 89%;
@@ -263,10 +268,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 470px!important;
+    height: 550px!important;
   }
   .card.mb-3-2{
-    height: 470px!important;
+    height: 550px!important;
   }
   .card.mb-3-g{
     width: 87%;
@@ -281,10 +286,10 @@ width: 100px;
 
 }
   .card.mb-3{
-    height: 550px!important;
+    height: 600px!important;
   }
   .card.mb-3-2{
-    height: 550px!important;
+    height: 600px!important;
   }
   .card.mb-3-g{
     width: 86%;
@@ -299,10 +304,10 @@ width: 100px;
  
 }
   .card.mb-3{
-    height: 620px!important;
+    height: 650px!important;
   }
   .card.mb-3-2{
-    height: 620px!important;
+    height: 650px!important;
   }
   .card.mb-3-g{
     width: 86%;
@@ -317,10 +322,10 @@ width: 100px;
   left: 75px!important;
 }
   .card.mb-3{
-    height: 720px!important;
+    height: 750px!important;
   }
   .card.mb-3-2{
-    height: 720px!important;
+    height: 750px!important;
   }
 
 }
@@ -354,10 +359,10 @@ width: 100px;
           <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4">
             <p class="title1">Quem somos</p>
   
-            <p class="text1">Há mais de 50 anos, entregamos as melhores e mais completas soluções para cuidar desde a abertura até a gestão da contabilidade da sua empresa.
+            <p class="text1">Há mais de 50 anos, entregamos as melhores e mais completas soluções para cuidar de tudo, desde a abertura até a gestão da contabilidade da sua empresa.
               <br>
               <br>
-              Empresa focada em inovação e em realizar o melhor atendimento possível para nossos clientes.</p>
+              Somos uma empresa focada em inovação e em realizar o melhor atendimento possível aos nossos clientes.</p>
           </div>
         </div>
       </div> 
@@ -371,13 +376,13 @@ width: 100px;
         </div>
         <div class="col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6" >
     <div class="card mb-3">
-          <img src="irpf.png" class="cardimg"alt="...">
-
-          <div class="card-body">
+          <div class="card-body" style="display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;">
+            <img src="irpf.png" class="cardimg"alt="...">
             <h5 class="card-title">IRPF/IRPJ</h5>
-            <p class="card-text">Realizamos imposto de
-              renda atual ou atrasado
-              para pessoa física ou jurídica.</p>
+            <p class="card-text">Realizamos a declaração do Imposto de Renda, atual ou atrasado, para pessoa física ou jurídica.</p>
 
           </div>
         </div>
@@ -386,16 +391,14 @@ width: 100px;
       
     <div class="card mb-3-2">
       
-          <img src="fiscal.png" class="cardimg"alt="..." >
-          <div class="card-body"  >
+          <div class="card-body" style="display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;">
+           <img src="fiscal.png" class="cardimg"alt="..." >
             <h5 class="card-title"> Assessoria
               Fiscal</h5>
-            <p class="card-text">Auxiliamos Empresas Lucro
-              Presumido, Empresas optantes 
-              pelo simples nacional e
-              Microempreendedor Individual
-              no cumprimento de suas
-              obrigações fiscais
+            <p class="card-text">Auxiliamos empresas do Lucro Presumido, empresas optantes pelo Simples Nacional e Microempreendedores Individuais no cumprimento de suas obrigações fiscais
             </p>
           </div>
         </div>
@@ -407,17 +410,20 @@ width: 100px;
     <div class="row">
       <div class=" col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6">
   <div class="card mb-3">
-        <img src="trabalhista.png" class="cardimg"alt="...">
 
-        <div class="card-body">
-          <h5 class="card-title">Assesoria Trabalhista</h5>
+        <div class="card-body" style="display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;">
+                <img src="trabalhista.png" class="cardimg"alt="...">
+          <h5 class="card-title">Assessoria Trabalhista</h5>
           <p class="card-text">
-            •Folha de pagamento<br>
-            •Controle de benefícios<br>
-            •Tratativas com o eSocial.<br>
-            •Administração de documentos.<br>
-            •Admissões e Demissões<br>
-            •Recrutamento e seleção.<br>
+            • Folha de pagamento<br>
+            • Controle de benefícios<br>
+            • Tratativas com o eSocial.<br>
+            • Administração de documentos.<br>
+            • Admissões e demissões<br>
+            • Recrutamento e seleção.<br>
             
             </p>
         </div>
@@ -425,16 +431,13 @@ width: 100px;
       </div>
   <div class="col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6">
   <div class="card mb-3-2">
+        <div class="card-body" style="display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;">
         <img src="contabil.png" class="cardimg"alt="...">
-        <div class="card-body">
           <h5 class="card-title"> Assessoria Contábil</h5>
-          <p class="card-text">Fornecemos análises detalhadas 
-            dos registros financeiros da 
-            empresa e identificamos áreas 
-            problemáticas oferecendo 
-            soluções para melhorar a 
-            eficiência financeira de sua
-            empresa. 
+          <p class="card-text">Fornecemos análises detalhadas dos registros financeiros da empresa, identificamos áreas problemáticas e oferecemos soluções para melhorar a eficiência financeira.
         </div>
       </div>
     </div>
@@ -462,11 +465,11 @@ width: 100px;
 
           
             <p class="card-text-g" style="position: relative; top: -9.559vw;left: 13.971vw;">
-              • Emissão e envios de boletos e taxas condominiais.<br>
-              • Administração de taxas de inadimplências<br>
-              • Gerenciamento de fiscais e contábeis do condomínio.<br>
-              • Organização e prestação de contas das documentações<br>
-              • Gerenciamento de fundos reservas<br>
+              • Emissão e envio de boletos e taxas condominiais.<br>
+              • Administração de taxas de inadimplência<br>
+              • Gerenciamento de questões fiscais e contábeis do condomínio.<br>
+              • Organização e prestação de contas da documentação.<br>
+              • Gerenciamento de fundos de reserva.<br>
               • Prestação de auxílio em todas as reuniões e assembleias.
             </p>
 
@@ -487,33 +490,33 @@ width: 100px;
 <div class="container-fluid footer" id="contato">
 <div class="row">
   <div class="col-4 col-md-4"><div class="card">
-    <img class="imgc" src="maps.png" alt="Card image cap">
     <div class="card-body" style=" display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center;">
+     <img class="imgc" src="maps.png" alt="Card image cap">
       <p class="ctitulo1">Onde estamos</p>
       <p class="card-text-2">AV. Tucuruvi, 313 - Tucuruvi São Paulo-SP, 02305-000</p>
     </div>
   </div></div>
 <div class="col-4 col-md-4">
   <div class="card">
-    <img class="imgc"  src="telefone.png" alt="Card image cap">
     <div class="card-body" style=" display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center;">
+     <img class="imgc"  src="telefone.png" alt="Card image cap">
       <p class="ctitulo2">Telefone</p>
       <p class="card-text-3">(11) 2925-6065</p>
     </div>
   </div>
 </div>
 <div class="col-4 col-md-4"><div class="card">
-  <img class="imgc"  src="mail.png" alt="Card image cap">
   <div class="card-body" style=" display: flex;
   flex-direction: column; 
   align-items: center; 
   justify-content: center;">
+   <img class="imgc"  src="mail.png" alt="Card image cap">
     <p class="ctitulo3">Email</p>
     <p class="card-text-4">benedetti@benedetti.com.br</p>
   </div>
