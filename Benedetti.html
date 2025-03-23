@@ -524,11 +524,11 @@ flex-direction: column;
 align-items: center; 
 justify-content: center;">
    <h2>Entre em contato</h2>
-   <form>
-       <input type="text" placeholder="Nome" required> 
-       <input type="email" placeholder="E-mail" required>
-       <textarea placeholder="Mensagem" rows="4" required></textarea>
-       <button type="submit">Enviar</button>
+   <form action="enviarEmail.php" method="post">
+       <input type="text" placeholder="Nome"  required name="nome"> 
+       <input type="email" placeholder="E-mail" required name="email">
+       <textarea placeholder="Mensagem" rows="4" required name="mensagem"></textarea>
+       <button type="submit" name="enviar">Enviar</button>
    </form>
 </div>
 
