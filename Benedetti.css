@@ -120,6 +120,7 @@ padding: 10px;
     color: rgb(215, 5,5);
     font-size: clamp(16px,2.5vw,1600px);
   text-decoration: underline  0.157vw solid #d80000;
+  margin-top: 3.5vh;
 }
 .cardimg{
     width: 13.889vw;
@@ -131,6 +132,7 @@ font-size: clamp(10px,1.528vw,700px);
 color: #333;
 word-break: keep-all;
 width: 25vw;
+margin-top: 1.5vh;
 
 }
 .card-text-g{
@@ -213,8 +215,6 @@ top: 30px;
     width: 10vw;
     height: 4.5vw;
     position: relative;
-    left: 10vw;
-    top: 2.1vw;
 }
 .card-text-2,.card-text-3,.card-text-4{
      font-size: clamp(10px,1.7vw,200px);
