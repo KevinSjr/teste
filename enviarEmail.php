@@ -40,17 +40,29 @@ if(isset($_POST["enviar"])) {
 
         $mail->send();
         $mensagem_sucesso = "E-mail enviado com sucesso!";
+
+        
+        echo "<script>
+        alert('$mensagem_sucesso');
+        
+            window.location.href = '" . $_SERVER['PHP_SELF'] . "';
+       
+      </script>";
+        exit();
+        
     } catch (Exception $e) {
         $mensagem_erro = "Erro ao enviar o e-mail: " . $mail->ErrorInfo;
+        
+          echo "<script>
+        alert('$mensagem_erro');
+       
+            window.location.href = '" . $_SERVER['PHP_SELF'] . "';
+   
+      </script>";
+
+exit();
     }
 }
 ?>
-<?php if ($mensagem_sucesso): ?>
-    <script>
-        alert("<?php echo $mensagem_sucesso; ?>");
-    </script>
-<?php elseif ($mensagem_erro): ?>
-    <script>
-        alert("<?php echo $mensagem_erro; ?>");
-    </script>
-<?php endif; ?>
+
+
