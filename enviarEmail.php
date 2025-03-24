@@ -18,7 +18,7 @@ if(isset($_POST["enviar"])) {
       
         $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         $mensagem = htmlspecialchars($_POST["mensagem"], ENT_QUOTES, 'UTF-8');
-
+      $nome = $_POST['nome'];
   
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
