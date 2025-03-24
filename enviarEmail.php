@@ -29,7 +29,7 @@ if(isset($_POST["enviar"])) {
         $mail->Port       = 587;
 
         // Definir remetente e destinatário
-        $mail->setFrom('', 'benedetti');
+        $mail->setFrom('', 'formulario de contato');
         $mail->addReplyTo($email); // Permite que a resposta vá para o usuário
         $mail->addAddress(''); // Você recebe o formulário
 
