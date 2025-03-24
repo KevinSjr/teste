@@ -1,26 +1,48 @@
 <?php
-header('Content-Type: application/json'); // Define o retorno como JSON
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $mensagem = htmlspecialchars($_POST['message']);
-    
-    $to = "seu-email@dominio.com";  // Altere para o seu e-mail real
-    $subject = "Novo contato do formulário";
+require '../phpmailer/src/Exception.php';
+require '../phpmailer/src/PHPMailer.php';
+require '../phpmailer/src/SMTP.php';
 
-    $body = "Nome: $nome\nE-mail: $email\nMensagem:\n$mensagem";
+$mensagem_sucesso = "";
+$mensagem_erro = "";
 
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+if(isset($_POST["enviar"])) {
+    $mail = new PHPMailer(true);
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo json_encode(["success" => true]); // Resposta de sucesso
-    } else {
-        echo json_encode(["success" => false, "message" => "Falha no envio de e-mail."]);
+    try {
+
+      
+        $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+        $mensagem = htmlspecialchars($_POST["mensagem"], ENT_QUOTES, 'UTF-8');
+
+  
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = ''; 
+        $mail->Password   = ''; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        // Definir remetente e destinatário
+        $mail->setFrom('', 'benedetti');
+        $mail->addReplyTo($email); // Permite que a resposta vá para o usuário
+        $mail->addAddress(''); // Você recebe o formulário
+
+        // Configuração do e-mail
+        $mail->isHTML(true);
+        $mail->Subject = 'Nova mensagem do formulario';
+        $mail->Body    = "<p><strong>Nome:</strong> $nome</p><p><strong>Email:</strong> $email</p><p><strong>Mensagem:</strong> $mensagem</p>";
+
+        $mail->send();
+        $mensagem_sucesso = "E-mail enviado com sucesso!";
+    } catch (Exception $e) {
+        $mensagem_erro = "Erro ao enviar o e-mail: " . $mail->ErrorInfo;
     }
-} else {
-    echo json_encode(["success" => false, "message" => "Método inválido."]);
 }
 ?>
+
