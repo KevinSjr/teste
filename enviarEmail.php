@@ -45,4 +45,12 @@ if(isset($_POST["enviar"])) {
     }
 }
 ?>
-
+<?php if ($mensagem_sucesso): ?>
+    <script>
+        alert("<?php echo $mensagem_sucesso; ?>");
+    </script>
+<?php elseif ($mensagem_erro): ?>
+    <script>
+        alert("<?php echo $mensagem_erro; ?>");
+    </script>
+<?php endif; ?>
