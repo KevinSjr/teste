@@ -50,6 +50,7 @@
 @media (min-width: 0px) and (max-width: 480px) {
   .card-text{margin: 0;}
   .card-title{margin: 0;}
+      .nav.container-fluid{height: 50vh;}
   .card{
     left: -10px;
     top: 5px;
@@ -82,15 +83,7 @@
   .navbutton1,.navbutton3,.navbutton2{
     font-size: 8px;
   }
-  .navbutton2{
-    left: 8vw;
-  }
-  .navbutton1{
-    left: 17vw;
-  }
-  .navbutton3{
-    left: 13vw;
-  }
+
   .card.mb-3{
     height: 34.559vw;
   }
@@ -334,22 +327,31 @@ width: 100px;
    
 </head>
 <body>
-    <div class="nav container-fluid" id="topo">
-        <div class="row">
-        <div class="col-1">
-        <img class="logo" src="logo2.png">
-        </div>
-      <div class="col-4">
-          <a href="#sobre"><p class="navbutton1">Sobre nós</p></a>
-        </div>
-        <div class="col-1 col-md-1 col-xxl-1 col-lg-1">
-          <a href="#serviços"><p class="navbutton2">Serviços</p></a>
-        </div>
-        <div class="col-1">
-          <a href="#contato"><p class="navbutton3">Contato</p></a>
-        </div>
-      </div>
-      </div>
+  <div class="nav container-fluid" id="topo" style=" display: flex;">
+  <div class="row w-100" style="height: 40%;">
+    <div class="col-4 d-flex flex-column align-items-center justify-content-center" style="height: 20%;">
+      <img class="logo" src="logo2.png">
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#sobre"><p class="navbutton1">Sobre nós</p></a>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#serviços"><p class="navbutton2">Serviços</p></a>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#contato"><p class="navbutton3">Contato</p></a>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row w-100" style="height: 40%;">
+    <div class="col-6 d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+      <p style="color: white;font-size: clamp(12px,3vw,200px);width: 80%;">Invista mais tempo no seu 
+      negócio e deixe a burocracia 
+      por nossa conta.</p>
+    </div>
+  </div>
+  <div class="row w-100" style="height: 20%;"></div>
+</div>
 
       <div class="container-fluid" id="sobre">
         <div class="row">
@@ -488,69 +490,48 @@ width: 100px;
 
 </div>
 <div class="container-fluid footer" id="contato">
-<div class="row">
-  <div class="col-4 col-md-4"><div class="card">
-    <div class="card-body" style=" display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;">
-     <img class="imgc" src="maps.png" alt="Card image cap">
-      <p class="ctitulo1">Onde estamos</p>
-      <p class="card-text-2">AV. Tucuruvi, 313 - Tucuruvi São Paulo-SP, 02305-000</p>
-    </div>
-  </div></div>
-<div class="col-4 col-md-4">
-  <div class="card">
-    <div class="card-body" style=" display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;">
-     <img class="imgc"  src="telefone.png" alt="Card image cap">
-      <p class="ctitulo2">Telefone</p>
-      <p class="card-text-3">(11) 2925-6065</p>
-    </div>
-  </div>
-</div>
-<div class="col-4 col-md-4"><div class="card">
-  <div class="card-body" style=" display: flex;
+  <div class="row">
+   <div class="col-2"></div>
+  <div class="col-8" style="display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;"><img src="logo.png" class="ftlogo"></div>
+  <div class="col-2" style="display: flex;
   flex-direction: column; 
   align-items: center; 
   justify-content: center;">
-   <img class="imgc"  src="mail.png" alt="Card image cap">
-    <p class="ctitulo3">Email</p>
-    <p class="card-text-4">benedetti@benedetti.com.br</p>
+    <a href="#topo"><img src="Up arrow.png" class="uparrow"></a>
   </div>
-</div>
-</div>
-<div class="col-8 forms"style=" display: flex;
+  <div class="col-6" style=" display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;">
+    <p style="color: white;font-size: clamp(12px,3vw,200px);font-weight: bold;width: 75%;">Entre em contato para mais informações</p>
+  </div>
+  <div class="col-6"></div>
+  <div class="col-6"style="display: flex;
 flex-direction: column; 
 align-items: center; 
 justify-content: center;">
-   <h2>Entre em contato</h2>
+<a href="https://www.google.com/maps/place/Av.+Tucuruvi,+313+-+Tucuruvi,+S%C3%A3o+Paulo+-+SP,+02305-000/@-23.478527,-46.607861,15z/data=!4m6!3m5!1s0x94cef66b8f0abed3:0x2f3c8c0912481cfe!8m2!3d-23.4789602!4d-46.6081613!16s%2Fg%2F11c1c2c172?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">
+<p style="color: white;font-size: clamp(12px,1.5vw,200px);margin: 0;">Venha nos visitar</p> </a>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.487052683343!2d-46.608161300000006!3d-23.4789602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66b8f0abed3%3A0x2f3c8c0912481cfe!2sAv.%20Tucuruvi%2C%20313%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002305-000!5e0!3m2!1sen!2sbr!4v1741291224575!5m2!1sen!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<div class="col-0-5"></div>
+<div class="col-4 forms"style=" display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center;">
    <form action="enviarEmail.php" method="post">
-       <input type="text" placeholder="Nome"  required name="nome"> 
+       <input type="text" placeholder="Nome"  required name="nome">
+       <input type="text" placeholder="Sobrenome"  required name="sobrenome">  
        <input type="email" placeholder="E-mail" required name="email">
        <textarea placeholder="Mensagem" rows="4" required name="mensagem"></textarea>
        <button type="submit" name="enviar">Enviar</button>
    </form>
 </div>
-
-
-<div class="col-4"></div>
-<div class="col-12" style="display: flex;
-flex-direction: column; 
-align-items: center; 
-justify-content: center;"><img src="logo.png" class="ftlogo"></div>
 </div>
-</div>
-
-
-<div class="container-fluid map"style="display: flex;
-flex-direction: column; 
-align-items: center; 
-justify-content: center;">
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.487052683343!2d-46.608161300000006!3d-23.4789602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66b8f0abed3%3A0x2f3c8c0912481cfe!2sAv.%20Tucuruvi%2C%20313%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002305-000!5e0!3m2!1sen!2sbr!4v1741291224575!5m2!1sen!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 
